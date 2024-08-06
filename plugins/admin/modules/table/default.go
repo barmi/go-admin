@@ -11,20 +11,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/db/dialect"
-	errs "github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/paginator"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/barmi/go-admin/modules/db"
+	"github.com/barmi/go-admin/modules/db/dialect"
+	errs "github.com/barmi/go-admin/modules/errors"
+	"github.com/barmi/go-admin/modules/language"
+	"github.com/barmi/go-admin/modules/logger"
+	"github.com/barmi/go-admin/plugins/admin/modules"
+	"github.com/barmi/go-admin/plugins/admin/modules/constant"
+	"github.com/barmi/go-admin/plugins/admin/modules/form"
+	"github.com/barmi/go-admin/plugins/admin/modules/paginator"
+	"github.com/barmi/go-admin/plugins/admin/modules/parameter"
+	"github.com/barmi/go-admin/template/types"
 )
 
 // DefaultTable is an implementation of table.Table
@@ -703,7 +703,7 @@ func (tb *DefaultTable) GetDataWithId(param parameter.Parameters) (FormInfo, err
 		}
 
 		if len(joinTables) > 0 {
-			if connection.Name() == db.DriverMssql  || connection.Name() == db.DriverPostgresql {
+			if connection.Name() == db.DriverMssql || connection.Name() == db.DriverPostgresql {
 				groupBy = " GROUP BY " + groupFields
 			} else {
 				groupBy = " GROUP BY " + pk
@@ -1139,7 +1139,7 @@ func (tb *DefaultTable) getColumns(table string) (Columns, bool) {
 	columnsModel, _ := tb.sql().Table(table).ShowColumns()
 
 	columns := make(Columns, len(columnsModel))
-	defer func(){
+	defer func() {
 		fmt.Println("getColumns columns", columns)
 	}()
 	switch tb.connectionDriver {

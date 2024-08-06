@@ -11,26 +11,26 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/collection"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/db/dialect"
-	errs "github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	"github.com/GoAdminGroup/go-admin/modules/ui"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/tools"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/action"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
-	selection "github.com/GoAdminGroup/go-admin/template/types/form/select"
-	"github.com/GoAdminGroup/html"
+	"github.com/barmi/go-admin-html"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/collection"
+	"github.com/barmi/go-admin/modules/config"
+	"github.com/barmi/go-admin/modules/db"
+	"github.com/barmi/go-admin/modules/db/dialect"
+	errs "github.com/barmi/go-admin/modules/errors"
+	"github.com/barmi/go-admin/modules/language"
+	"github.com/barmi/go-admin/modules/logger"
+	"github.com/barmi/go-admin/modules/ui"
+	"github.com/barmi/go-admin/modules/utils"
+	"github.com/barmi/go-admin/plugins/admin/models"
+	form2 "github.com/barmi/go-admin/plugins/admin/modules/form"
+	"github.com/barmi/go-admin/plugins/admin/modules/parameter"
+	"github.com/barmi/go-admin/plugins/admin/modules/tools"
+	"github.com/barmi/go-admin/template"
+	"github.com/barmi/go-admin/template/types"
+	"github.com/barmi/go-admin/template/types/action"
+	"github.com/barmi/go-admin/template/types/form"
+	selection "github.com/barmi/go-admin/template/types/form/select"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/text/cases"
 	textLang "golang.org/x/text/language"
@@ -44,7 +44,6 @@ type SystemTable struct {
 func NewSystemTable(conn db.Connection, c *config.Config) *SystemTable {
 	return &SystemTable{conn: conn, c: c}
 }
-
 
 var filterType = types.FilterType{NoIcon: true, HeadWidth: 4, InputWidth: 8}
 
@@ -1466,10 +1465,10 @@ func (s *SystemTable) GetGenerateForm(ctx *context.Context) (generateTool Table)
 			{Text: "time", Value: "time"},
 			{Text: "log", Value: "log"},
 			{Text: "fmt", Value: "fmt"},
-			{Text: "github.com/GoAdminGroup/go-admin/modules/db/dialect", Value: "github.com/GoAdminGroup/go-admin/modules/db/dialect"},
-			{Text: "github.com/GoAdminGroup/go-admin/modules/db", Value: "github.com/GoAdminGroup/go-admin/modules/db"},
-			{Text: "github.com/GoAdminGroup/go-admin/modules/language", Value: "github.com/GoAdminGroup/go-admin/modules/language"},
-			{Text: "github.com/GoAdminGroup/go-admin/modules/logger", Value: "github.com/GoAdminGroup/go-admin/modules/logger"},
+			{Text: "github.com/barmi/go-admin/modules/db/dialect", Value: "github.com/barmi/go-admin/modules/db/dialect"},
+			{Text: "github.com/barmi/go-admin/modules/db", Value: "github.com/barmi/go-admin/modules/db"},
+			{Text: "github.com/barmi/go-admin/modules/language", Value: "github.com/barmi/go-admin/modules/language"},
+			{Text: "github.com/barmi/go-admin/modules/logger", Value: "github.com/barmi/go-admin/modules/logger"},
 		}).
 		FieldDefault("").
 		FieldOptionExt(map[string]interface{}{

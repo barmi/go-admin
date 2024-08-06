@@ -8,14 +8,14 @@ import (
 	"log"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/db/dialect"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/barmi/go-admin/modules/db/dialect"
+	"github.com/barmi/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/db"
+	"github.com/barmi/go-admin/modules/service"
+	"github.com/barmi/go-admin/plugins/admin/models"
+	"github.com/barmi/go-admin/plugins/admin/modules"
 	"golang.org/x/crypto/bcrypt"
 )
 

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/logger"
 )
 
 type ServerLoginParam struct {

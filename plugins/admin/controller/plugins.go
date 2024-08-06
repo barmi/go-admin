@@ -10,23 +10,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/modules/system"
+	"github.com/barmi/go-admin/modules/system"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/barmi/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/barmi/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/remote_server"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard"
-	template2 "github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
-	"github.com/GoAdminGroup/html"
+	"github.com/barmi/go-admin-html"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/auth"
+	"github.com/barmi/go-admin/modules/language"
+	"github.com/barmi/go-admin/modules/remote_server"
+	"github.com/barmi/go-admin/modules/utils"
+	"github.com/barmi/go-admin/plugins"
+	"github.com/barmi/go-admin/plugins/admin/modules/guard"
+	template2 "github.com/barmi/go-admin/template"
+	"github.com/barmi/go-admin/template/types"
+	"github.com/barmi/go-admin/template/types/form"
 	"github.com/gin-gonic/gin"
 )
 

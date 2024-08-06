@@ -3,9 +3,9 @@ package paginator
 import (
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
-	_ "github.com/GoAdminGroup/themes/sword"
+	_ "github.com/barmi/go-admin-themes/sword"
+	"github.com/barmi/go-admin/modules/config"
+	"github.com/barmi/go-admin/plugins/admin/modules/parameter"
 )
 
 func TestGet(t *testing.T) {

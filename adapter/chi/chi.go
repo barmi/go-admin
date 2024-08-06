@@ -12,14 +12,14 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/engine"
-	cfg "github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/barmi/go-admin/adapter"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/engine"
+	cfg "github.com/barmi/go-admin/modules/config"
+	"github.com/barmi/go-admin/plugins"
+	"github.com/barmi/go-admin/plugins/admin/models"
+	"github.com/barmi/go-admin/plugins/admin/modules/constant"
+	"github.com/barmi/go-admin/template/types"
 	"github.com/go-chi/chi"
 )
 

@@ -1,15 +1,15 @@
 package guard
 
 import (
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/db"
+	"github.com/barmi/go-admin/modules/errors"
+	"github.com/barmi/go-admin/modules/service"
+	"github.com/barmi/go-admin/plugins/admin/modules/constant"
+	"github.com/barmi/go-admin/plugins/admin/modules/response"
+	"github.com/barmi/go-admin/plugins/admin/modules/table"
+	"github.com/barmi/go-admin/template"
+	"github.com/barmi/go-admin/template/types"
 )
 
 type Guard struct {

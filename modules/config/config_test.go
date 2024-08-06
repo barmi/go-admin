@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/modules/utils"
+	"github.com/barmi/go-admin/modules/utils"
 
 	"github.com/stretchr/testify/assert"
 )
