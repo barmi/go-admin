@@ -3,9 +3,9 @@ package display
 import (
 	"strconv"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/barmi/go-admin/context"
+	"github.com/barmi/go-admin/modules/utils"
+	"github.com/barmi/go-admin/template/types"
 )
 
 type FileSize struct {
